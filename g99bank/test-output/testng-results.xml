@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14857" started-at="2017-09-08T13:58:04Z" finished-at="2017-09-08T13:58:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14857" started-at="2017-09-08T13:58:04Z" finished-at="2017-09-08T13:58:19Z">
+      <class name="group99bank.g99bank.test.LoginUser">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="beforeTest" is-config="true" duration-ms="3399" started-at="2017-09-08T09:58:05Z" finished-at="2017-09-08T09:58:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="login" duration-ms="437" started-at="2017-09-08T09:58:08Z" data-provider="getUsers" finished-at="2017-09-08T09:58:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngrwrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YpUtunY]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="58" started-at="2017-09-08T09:58:09Z" finished-at="2017-09-08T09:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="beforeTest" is-config="true" duration-ms="3018" started-at="2017-09-08T09:58:09Z" finished-at="2017-09-08T09:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="login" duration-ms="399" started-at="2017-09-08T09:58:12Z" data-provider="getUsers" finished-at="2017-09-08T09:58:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr95961]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="58" started-at="2017-09-08T09:58:12Z" finished-at="2017-09-08T09:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="beforeTest" is-config="true" duration-ms="2887" started-at="2017-09-08T09:58:12Z" finished-at="2017-09-08T09:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="login" duration-ms="348" started-at="2017-09-08T09:58:15Z" data-provider="getUsers" finished-at="2017-09-08T09:58:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngrwrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="57" started-at="2017-09-08T09:58:15Z" finished-at="2017-09-08T09:58:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="beforeTest" is-config="true" duration-ms="3001" started-at="2017-09-08T09:58:16Z" finished-at="2017-09-08T09:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="login" duration-ms="571" started-at="2017-09-08T09:58:19Z" data-provider="getUsers" finished-at="2017-09-08T09:58:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr95961]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YpUtunY]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:group99bank.g99bank.test.LoginUser@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="38" started-at="2017-09-08T09:58:19Z" finished-at="2017-09-08T09:58:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- group99bank.g99bank.test.LoginUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -24,5 +24,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="/Users/admin/jars/selenium-server-standalone-3.5.0.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/poi-3.16/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="/Users/admin/poi-3.16/poi-3.16.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
