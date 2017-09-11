@@ -1,10 +1,14 @@
 package group99bank.g99bank.test;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,7 +20,7 @@ import org.testng.annotations.Test;
 import group99bank.g99bank.pageObjects.LoginPage;
 import group99bank.g99bank.resources.Base;
 
-public class LoginUser extends Base {
+public class LoginUser2 extends Base {
 
 	@BeforeMethod
 	public void beforeTest() {
@@ -30,11 +34,24 @@ public class LoginUser extends Base {
 	
 	@DataProvider
 	public Object[][] getUsers() throws IOException {
-		return getUserData(FILE_NAME,SHEET_NAME);
-	}
+		Object[][] users = new Object[4][2]; 
+				users[0][0] = "mngr95961";
+				users[0][1] = "YpUtunY" ;
+				
+				users[1][0] = "mngr95961";
+				users[1][1] = "wrongpass" ;
+				
+				users[2][0] = "wronguser";
+				users[2][1] = "YpUtunY" ;
+				
+				users[3][0] = "wronguser";
+				users[3][1] = "wrongpass" ;
+				
+		return users;
+	  }
 	
 	@Test (dataProvider = "getUsers")
-	public void login( String user, String pass)  
+	public void login( String user, String pass) throws IOException  
 	{
 		  LoginPage lp = new LoginPage(driver);
 		  System.out.println(user+"||"+pass);
@@ -51,7 +68,10 @@ public class LoginUser extends Base {
 			 WebDriverWait w = new WebDriverWait(driver,10);
 			 w.until(ExpectedConditions.elementToBeClickable(By.linkText("Log out")));
 			 Assert.assertEquals(driver.getTitle(),MGR_TITLE);
+			 System.out.println("Welcome message is -"+driver.findElement(By.cssSelector(".heading3 td")).getText());
 			 Assert.assertTrue(driver.findElement(By.cssSelector(".heading3 td")).getText().contains(user) );
+			 File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			 FileUtils.copyFile(src, new File(myPath+"welcomepage.png"));
 		  }
 	  
   }

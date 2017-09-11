@@ -19,7 +19,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 		public static WebDriver driver;
 		private static String URL ="http://www.demo.guru99.com/V4/";
 		private static String DRIVER_PATH = "/Users/admin/selenium/";
-		
+		protected static String myPath = "/Users/admin/selenium/";
 		//login user data
 		public static final String FILE_NAME="/Users/admin/apps/guru99bank/g99bank/guru99.xlsx";
 		public static final String SHEET_NAME="users";
