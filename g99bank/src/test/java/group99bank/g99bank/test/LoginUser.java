@@ -1,5 +1,7 @@
 package group99bank.g99bank.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.Alert;
@@ -44,14 +46,14 @@ public class LoginUser extends Base {
 		  
 		  try {
 			Alert errorAlert = driver.switchTo().alert();
-			Assert.assertEquals(errorAlert.getText(), LOGIN_ERRMSG); 
+			AssertJUnit.assertEquals(errorAlert.getText(), LOGIN_ERRMSG); 
 			errorAlert.accept();
 		  } 
 		  catch (NoAlertPresentException e) {
 			 WebDriverWait w = new WebDriverWait(driver,10);
 			 w.until(ExpectedConditions.elementToBeClickable(By.linkText("Log out")));
-			 Assert.assertEquals(driver.getTitle(),MGR_TITLE);
-			 Assert.assertTrue(driver.findElement(By.cssSelector(".heading3 td")).getText().contains(user) );
+			 AssertJUnit.assertEquals(driver.getTitle(),MGR_TITLE);
+			 AssertJUnit.assertTrue(driver.findElement(By.cssSelector(".heading3 td")).getText().contains(user) );
 		  }
 	  
   }

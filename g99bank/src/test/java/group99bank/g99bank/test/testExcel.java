@@ -1,5 +1,6 @@
 package group99bank.g99bank.test;
 
+import org.testng.annotations.Test;
 import java.io.IOException;
 
 import org.testng.annotations.Test;

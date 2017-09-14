@@ -1,5 +1,6 @@
 package group99bank.g99bank.resources;
 
+import org.testng.annotations.AfterMethod;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -47,6 +48,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 		}
 		
 	
+		@AfterMethod
 		public void tearDown() {
 			  driver.close();
 			  driver=null;

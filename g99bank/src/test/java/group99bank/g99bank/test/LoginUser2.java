@@ -1,5 +1,7 @@
 package group99bank.g99bank.test;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
 
@@ -61,15 +63,15 @@ public class LoginUser2 extends Base {
 		  
 		  try {
 			Alert errorAlert = driver.switchTo().alert();
-			Assert.assertEquals(errorAlert.getText(), LOGIN_ERRMSG); 
+			AssertJUnit.assertEquals(errorAlert.getText(), LOGIN_ERRMSG); 
 			errorAlert.accept();
 		  } 
 		  catch (NoAlertPresentException e) {
 			 WebDriverWait w = new WebDriverWait(driver,10);
 			 w.until(ExpectedConditions.elementToBeClickable(By.linkText("Log out")));
-			 Assert.assertEquals(driver.getTitle(),MGR_TITLE);
+			 AssertJUnit.assertEquals(driver.getTitle(),MGR_TITLE);
 			 System.out.println("Welcome message is -"+driver.findElement(By.cssSelector(".heading3 td")).getText());
-			 Assert.assertTrue(driver.findElement(By.cssSelector(".heading3 td")).getText().contains(user) );
+			 AssertJUnit.assertTrue(driver.findElement(By.cssSelector(".heading3 td")).getText().contains(user) );
 			 File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			 FileUtils.copyFile(src, new File(myPath+"welcomepage.png"));
 		  }
